@@ -1,0 +1,260 @@
+body{
+    margin:0px;
+    padding:0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+/*****En tête*****/
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding: 20px ;
+    transition: 0.6s;
+    z-index: 100000;
+    background-color: #262226;
+}
+
+header.change{
+    padding: 8px 20px;
+}
+
+/****Menu navigation****/
+
+header ul {
+    display: flex;
+    position: relative;
+    padding-right: 20px;
+}
+    
+header ul li{
+     position: relative;
+     
+}
+    
+header ul li a {
+    position: relative;
+    margin: 30px;
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    transition: 0.6s;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+header.change ul li a{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+
+/****logo*****/
+header.logo img{
+    position: relative;
+    transition: 0.6s;
+}
+
+/***Footer***/
+
+footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #262226;
+    color: white;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 15px;
+    font-style: italic;
+}
+
+footer p{
+    font-size: 18px;
+}
+
+/***nos prestations***/
+h1{
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 150px;
+    margin-bottom: 80px;
+}
+
+h3{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+/***Réalisation d'affiche***/
+#affiche{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 50px 150px;
+    background-color: #fca096;
+}
+
+#affiche img{
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#affiche p{
+    width: 700px;
+    font-size: 20px;
+    text-align: justify;
+
+}
+
+.textefondblanc{
+    background-color: white;
+    padding: 0px 20px;
+    width: 700px;
+    border-radius: 10px;
+}
+
+/***Réalisation audiovisuelle***/
+#audiovisuelle{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 50px 150px;
+    
+}
+
+#audiovisuelle img{
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#audiovisuelle p{
+    font-size: 20px;
+    text-align: justify;
+}
+
+.texteaudio{
+    padding: 0px 20px;
+    width: 700px;
+    border: 5px solid #fca096;
+    border-radius: 10px;
+}
+
+
+/***Création d'une identité visuelle***/
+#identite{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 50px 150px;
+    background-color: #FCA168;
+}
+
+#identite img{
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#identite p{
+    width: 700px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+/***Community management***/
+#community{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 50px 150px;
+}
+
+#community img{
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#community p{
+    width: 700px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.textecommunity{
+    padding: 0px 20px;
+    width: 700px;
+    border: 5px solid #FCA168;
+    border-radius: 10px;
+}
+
+/***Création d'un site web***/
+#site{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 50px 150px;
+    background-color: #8A9EE6;
+}
+
+#site img{
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#site p{
+    width: 700px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/***Evénementiel***/
+#evenementiel{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    margin: 50px 150px;
+}
+
+#evenementiel img{
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+}
+
+#evenementiel p{
+    width: 700px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.texteevent{
+    padding: 0px 20px;
+    width: 700px;
+    border: 5px solid #8A9EE6;
+    border-radius: 10px;
+}

@@ -1,0 +1,194 @@
+body{
+  margin:0px;
+  padding:0px;
+  font-family: 'Roboto', sans-serif; 
+  overflow: hidden;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+/*****Header*****/
+
+header{
+  position: relative;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  padding: 20px;
+  transition: 0.6s;
+  z-index: 100000;
+  background-color: rgba(36, 40, 57);
+}
+
+/****Menu navigation****/
+
+header ul {
+  display: flex;
+  position: relative;
+  padding-right: 20px;
+}
+  
+header ul li{
+   position: relative;
+   
+}
+  
+header ul li a {
+  position: relative;
+  margin: 30px;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  transition: 0.6s;
+}
+
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+/****logo*****/
+header.logo img{
+  position: relative;
+  transition: 0.6s;
+}
+
+/***Footer***/
+
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(36, 40, 57);
+  color: white;
+  text-align: center;
+  padding-bottom: 15px;
+  font-size: 15px;
+  font-style: italic;
+}
+
+footer p{
+  font-size: 18px;
+  color: white;
+}
+
+/***formulaire***/
+
+.background{
+  background-image: url(../images/mosaïque2.png);
+  padding: 88px 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  margin: 0;
+  color: black;
+}
+
+.contact{
+  display: flex;
+  margin: 40px;
+}
+
+form{
+  margin: auto;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px ;
+  height: 400px;
+  width: 650px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.63);
+}
+
+form .corps-formulaire{
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom:30px;
+  margin-left: 30px;
+}
+
+form .corps-formulaire .boite{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+input{
+  margin-top: 5px;
+  padding: 10px 5px 10px 35px;
+  border: 1px solid #c9c9c9;
+  outline-color: #e55f40;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+i{
+  position: absolute;
+  left: 0;
+  top: 28px;
+  padding: 10px 5px;
+}
+
+form .corps-formulaire .droite{
+  margin-left: 60px;
+}
+
+form .corps-formulaire .droite .message{
+  height: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+textarea{
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #c9c9c9;
+  outline-color: #e55f40;
+  border-radius: 5px;
+  resize: none;
+  height: 40%;
+  font-size: 18px;
+}
+
+form .pied-formulaire{
+  display: flex;
+}
+
+form .pied-formulaire button{
+  margin-bottom: 20px;
+  margin: auto;
+  background-color: #e55f40;
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 2rem;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+form .pied-formulaire button:hover{
+  transform: scale(1.05);
+  background-color: #e55e40de;
+}
+
+
