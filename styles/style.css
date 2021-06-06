@@ -72,6 +72,15 @@ header.change ul li a{
     transition: 0.6s;
 }
 
+.logo img{
+    transition: 0.6s;
+}
+
+.change img{
+    height: 65px;
+    width: 45px;
+}
+
 /****image accueil****/
 
 .imgaccueil{
@@ -87,19 +96,18 @@ header.change ul li a{
 
 .presentation{
     display: flex;
-    font-size: 22px;
+    
     flex-direction: column;
 }
 
-.presentation p{
+.desc{
     text-align: center;
-    padding: 50px 316px 50px 250px;
+    margin: auto;
+    padding: 50px 316px 20px 250px;
+    font-size: 22px;
 }
 
-.presentation h3{
-    padding: 0 250px;
-    margin: 0;
-}
+
 
 .presentation span{
     color:#e55f40;
@@ -124,79 +132,142 @@ footer p{
     font-size: 18px;
 }
 
-/***nos prestations***/
-
-h2{
-    text-align: center;
-    margin-bottom: 50px;
+footer a{
+    padding: 0px 30px;
 }
 
-.services{
-    padding-left: 250px;
-    padding-right: 250px;
+/***équipe***/
+
+.titreequipe{
+    padding: 30px 0px;
+    margin: auto;
+    font-size: 40px;
 }
 
-.services>.ligneun{
+.equipe{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 50px;
+    margin: 0px 250px 50px 250px;
 }
 
-.services>.lignedeux{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-bottom: 50px;
-}
-
-.services div{
+.equipe div{
     display: flex;
     flex-direction: column;
+    padding: 30px 0px;
+}
+
+.equipe img{
+    width: 250px;
+    border-radius: 50% ;
+    margin: 0px auto 10px auto;
     box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.24);
-    border-radius: 5px;
-    max-width: 400px;
-    padding: 35px 0px;
 }
 
-.services div img{
-    margin: auto;
-    padding-bottom: 10px;
-}
-
-.services p{
-    margin: auto;
-    max-width: 300px;
+.role,
+.nom{
     text-align: center;
-    color: rgba(0, 0, 0, 0.568);
-    padding-bottom: 15px;
+    margin: 0;
+    padding: 5px;
+}
+
+.nom{
+    font-size: 22px;
+    font-weight: bold;
+    color: #0f70b7;
+}
+
+.role{
+    font-size: 20px;
+}
+/***nos competences***/
+
+.comp{
+    background-color: #1243583d;
+    padding: 40px 0px;
+}
+
+.competences{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    margin: 0px 350px;
+    padding-left: 100px;
 }
 
 .titre{
+    padding-bottom: 25px;
     text-align: center;
-    padding-bottom: 20px;
-    padding-top: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    color: rgba(36, 40, 57);
+    font-size: 30px;
+    margin: 0;
+    color:#e55f40;
 }
 
-.bouton{
-    background-color:#e55f40;
-    color: white;
-    border: none;
-    padding: 15px 20px;
-    max-width: 115px;
-    text-align: center;
-    text-decoration: none;
+.ligne{
     display: flex;
-    font-size: 16px;
-    border-radius: 2rem;
+    flex-direction: row;
+    padding: 20px 0px;
+    margin: 5px;
+    
+}
+
+.ligne img{
+    width: 100px;
+}
+
+.colonne1,
+.colonne2{
+    padding-left: 40px;
+}
+
+
+.ligne p {
+    margin: auto auto auto 30px;
+    font-size: 20px;
+    font-weight: bold;    
+}
+
+/***Contactez-nous***/
+
+.contact{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact h2{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.separation{
+    border: 1px solid lightgrey;
+    width: 100px;
     margin: auto;
-    transition: transform 0.5s;
 }
 
-.bouton:hover{
-    background-color: #e55e40de;
-    transform: scale(1.05);
+.contact p{
+    text-align: center;
+    font-size: 20px;
 }
 
+button{
+  margin-bottom: 20px;
+  margin: 20px auto 50px auto;
+  background-color: #e55f40;
+  font-size: 20px;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 2rem;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
 
+button a{
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+  transform: scale(1.05);
+  background-color: #e55e40de;
+}

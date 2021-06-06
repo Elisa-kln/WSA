@@ -91,170 +91,151 @@ footer p{
     font-size: 18px;
 }
 
-/***nos prestations***/
+footer a{
+    padding: 0px 30px;
+    cursor: pointer;
+}
+
+/***nos services***/
 h1{
     text-align: center;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 35px;
     margin-top: 150px;
-    margin-bottom: 80px;
-}
-
-h3{
-    font-size: 25px;
     margin-bottom: 30px;
 }
 
-/***Réalisation d'affiche***/
-#affiche{
+.services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 250px 50px 250px;
+}
+
+.services div{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0px;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px 2px rgba(0, 0, 0, 0.24);
+}
+
+.services img{
+    width: 80px;
+    margin: auto;
+}
+
+.titre{
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgba(36, 40, 57);
+}
+
+.ex{
+    margin: auto;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.568);
+    padding-bottom: 20px;
+    font-size: 20px;
+    max-width: 300px;
+}
+
+
+/***notre processus***/
+
+.processtitre{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 100px;
+}
+
+.desc{
+    font-size: 22px;
+    text-align: center;
+}
+.contenant{
+    margin: 50px 300px;
+}
+
+.ligne{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding: 50px 150px;
-    background-color: #fca096;
+    background-color: #fdf3f1;
 }
 
-#affiche img{
-    display: flex;
-    margin: auto;
-    border-radius: 5px;
+.ligne img{
+    width: 100%;
 }
 
-#affiche p{
-    width: 700px;
-    font-size: 20px;
+.titreprocess{
+    padding: 50px 0px 15px  50px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #e55f40;
+}
+
+.texte{
+    padding: 0px 40px 20px  50px;
     text-align: justify;
-
-}
-
-.textefondblanc{
-    background-color: white;
-    padding: 0px 20px;
-    width: 700px;
-    border-radius: 10px;
-}
-
-/***Réalisation audiovisuelle***/
-#audiovisuelle{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding: 50px 150px;
-    
-}
-
-#audiovisuelle img{
-    display: flex;
-    margin: auto;
-    border-radius: 5px;
-}
-
-#audiovisuelle p{
     font-size: 20px;
-    text-align: justify;
 }
 
-.texteaudio{
-    padding: 0px 20px;
-    width: 700px;
-    border: 5px solid #fca096;
-    border-radius: 10px;
+.texte a{
+    color: #e55f40;
+    font-weight: bold;
 }
 
-
-/***Création d'une identité visuelle***/
-#identite{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding: 50px 150px;
-    background-color: #FCA168;
+.texte a:hover {
+    text-decoration: underline;
 }
 
-#identite img{
+/***Contactez-nous***/
+
+.contact{
     display: flex;
+    flex-direction: column;
+}
+
+.contact h2{
+    margin-top: 80px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.separation{
+    border: 1px solid #e09888;
+    width: 100px;
     margin: auto;
-    border-radius: 5px;
 }
 
-#identite p{
-    width: 700px;
+.contact p{
+    text-align: center;
     font-size: 20px;
-    text-align: justify;
 }
 
-
-/***Community management***/
-#community{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    margin: 50px 150px;
+button{
+  margin-bottom: 20px;
+  margin: 20px auto 50px auto;
+  background-color: #e55f40;
+  font-size: 20px;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 2rem;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.5s;
 }
 
-#community img{
-    display: flex;
-    margin: auto;
-    border-radius: 5px;
+button a{
+    color: white;
 }
 
-#community p{
-    width: 700px;
-    font-size: 20px;
-    text-align: justify;
-}
-
-.textecommunity{
-    padding: 0px 20px;
-    width: 700px;
-    border: 5px solid #FCA168;
-    border-radius: 10px;
-}
-
-/***Création d'un site web***/
-#site{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    padding: 50px 150px;
-    background-color: #8A9EE6;
-}
-
-#site img{
-    display: flex;
-    margin: auto;
-    border-radius: 5px;
-}
-
-#site p{
-    width: 700px;
-    font-size: 20px;
-    text-align: justify;
-}
-
-/***Evénementiel***/
-#evenementiel{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    margin: 50px 150px;
-}
-
-#evenementiel img{
-    display: flex;
-    margin: auto;
-    border-radius: 5px;
-}
-
-#evenementiel p{
-    width: 700px;
-    font-size: 20px;
-    text-align: justify;
-}
-
-.texteevent{
-    padding: 0px 20px;
-    width: 700px;
-    border: 5px solid #8A9EE6;
-    border-radius: 10px;
+button:hover{
+  transform: scale(1.05);
+  background-color: #e55e40de;
 }

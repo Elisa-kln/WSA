@@ -82,6 +82,10 @@ footer p{
   color: white;
 }
 
+footer a{
+  padding: 0px 30px;
+}
+
 /***formulaire***/
 
 .background{
